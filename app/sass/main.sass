@@ -1,0 +1,195 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	outline: none!important
+	font-family: $default-font
+
+//Autovozoff start
+
+
+
+.h1
+	font-size: 30px
+	padding: 20px 0 0 0
+	text-align: center
+	font-weight: 700
+	text-align: center
+	margin-bottom: 30px
+.h2
+	font-size: 25px
+
+.gerb-c
+	.h2
+		margin: 0px
+		font-weight: 700
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		margin-top: 15px
+		font-size: 20px
+	img
+		max-width: 160px
+	.img-c
+		min-height: 406px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+
+.btn-accent
+	color: $dark
+	background: $accent
+	border: none
+	border-radius: 5px
+	text-transform: uppercase
+	width: 100%
+	padding: 5px 10px
+	font-weight: 500
+	cursor: pointer
+	&:hover
+		color: $accent
+		background: $dark
+		text-decoration: none
+.auto-slider
+	.title-h
+		margin-bottom: 15px
+		font-size: 20px
+		font-weight: 700
+	.clicbait
+		font-size: 15px
+		text-align: center
+		margin-top: 15px
+		padding: 0 5px
+		font-weight: 700
+		line-height: 1.4
+		b
+			color: $accent2
+			font-size: 20px
+			display: block
+	.btn-accent
+		margin-top: 15px
+		padding: 13px 10px
+		font-weight: 900
+		text-transform: uppercase
+		font-family: Arial, roboto, arial, helvetica, sans-serif
+.route-cont
+	display: flex
+	align-items: flex-start
+	flex-direction: column
+	justify-content: space-around
+	min-height: 290px
+	margin-top: 50px
+	.item
+		display: flex
+		align-items: center
+		padding: 10px 0
+		.svg-cont
+			min-width: 90px
+		.txt
+			padding-left: 30px
+.content-text
+	margin-top: 60px
+.brand-slider
+	.item
+		min-height: 120px
+		border: solid 3px $accent
+		border-radius: 2px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-left: 3px
+		margin-right: 3px
+		padding-bottom: 20px
+		.prev
+			min-height: 182px
+			min-width: 243px
+			background-size: contain
+			background-position: center
+			background-repeat: no-repeat
+		.content
+			min-height: 100px
+			display: flex
+			align-items: center
+			flex-direction: column
+			justify-content: center
+			.h-title
+				font-weight: 600
+				font-size: 18px
+				line-height: 20px
+				padding-bottom: 50px
+			.price
+				text-align: center
+				width: 100%
+				font-size: 16px
+				line-height: 20px
+				font-weight: bold
+				b
+					font-weight: 900
+					font-size: 18px
+					font-weight: 900
+					color: $accent2
+	.slick-next, .slick-prev
+		z-index: 10
+		svg
+			position: relative
+			top: -20px
+	.slick-next
+		right: 15px
+	.slick-prev
+		left: 15px
+
+.content-table
+	table:not(.info-proj)
+		margin-bottom: 25px
+		thead
+			position: relative
+			th
+				background: #c7c8ca
+				font-weight: 700
+			.city-name
+				th
+					background: #eeeeee
+			th
+				position: sticky!important
+				top: -1px
+				text-align: center
+				&:first-child
+					text-align: left
+			
+		th
+			padding: 8px
+			line-height: 1.42857143 
+			border: 1px solid $dark
+			background: $grey-l
+			color: #000
+			font-weight: 500
+		td
+			padding: 0 15px
+		tr
+			border-bottom: solid 1px $dark
+		tbody
+			tr
+				border-bottom: solid 1px $dark
+				th
+					text-align: center
+				th:first-child
+					text-align: left
+					color: #000!important
+				&:nth-child(odd)
+					th
+						background: #ffffff
+	.logo-b
+		display: flex
+		align-items: center
+		.img-logo
+			width: 30px
+			img
+				max-width: 100%
+		.txt
+			padding-left: 15px
+//Autovozoff end
+
+@import "media" // Всегда в конце
